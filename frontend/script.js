@@ -18,6 +18,23 @@ const HEALTH_ENDPOINT = `${API_BASE}/health`;
 // ── State ─────────────────────────────────────────────────────────
 let sessionId = generateSessionId();
 let isWaiting = false;
+let askedQuestions = []; // Track questions already asked
+
+// ── Follow-up Suggestion Pool ────────────────────────────────────
+const SUGGESTION_POOL = [
+  "What services does Mysoft Heaven offer?",
+  "Tell me about Mysoft Heaven's products and platforms.",
+  "What are some notable projects by Mysoft Heaven?",
+  "How can I contact Mysoft Heaven?",
+  "Are there any job openings at Mysoft Heaven?",
+  "What certifications does Mysoft Heaven hold?",
+  "Tell me about the company overview.",
+  "What technologies does Mysoft Heaven work with?",
+  "Who are Mysoft Heaven's clients?",
+  "What is Mysoft Heaven's mission and vision?",
+  "Tell me about the team at Mysoft Heaven.",
+  "What industries does Mysoft Heaven serve?",
+];
 
 // ── DOM Elements ──────────────────────────────────────────────────
 const chatMessages = document.getElementById("chatMessages");
@@ -98,6 +115,10 @@ async function handleSend() {
   if (welcomeScreen) {
     welcomeScreen.style.display = "none";
   }
+
+  // Track this question and remove old follow-up chips
+  askedQuestions.push(question);
+  removeExistingFollowUpSuggestions();
 
   // Add user message
   appendMessage("user", question);
@@ -194,6 +215,14 @@ function appendMessage(role, text, meta = {}) {
   messageDiv.appendChild(content);
   chatMessages.appendChild(messageDiv);
 
+  // Add follow-up suggestion chips after bot messages (non-fallback)
+  if (role === "bot") {
+    const suggestionsDiv = createFollowUpSuggestions();
+    if (suggestionsDiv) {
+      content.appendChild(suggestionsDiv);
+    }
+  }
+
   // Scroll to bottom
   scrollToBottom();
 }
@@ -227,6 +256,39 @@ function escapeHtml(text) {
   const div = document.createElement("div");
   div.textContent = text;
   return div.innerHTML;
+}
+
+// ── Follow-up Suggestions ────────────────────────────────────────
+function createFollowUpSuggestions() {
+  // Get suggestions that haven't been asked yet
+  const available = SUGGESTION_POOL.filter((q) => !askedQuestions.includes(q));
+  if (available.length === 0) return null;
+
+  // Pick up to 3 random suggestions
+  const shuffled = available.sort(() => Math.random() - 0.5);
+  const picked = shuffled.slice(0, 3);
+
+  const container = document.createElement("div");
+  container.className = "followup-suggestions";
+
+  picked.forEach((question) => {
+    const chip = document.createElement("button");
+    chip.className = "followup-chip";
+    chip.textContent = question;
+    chip.addEventListener("click", () => {
+      if (isWaiting) return;
+      chatInput.value = question;
+      handleSend();
+    });
+    container.appendChild(chip);
+  });
+
+  return container;
+}
+
+function removeExistingFollowUpSuggestions() {
+  const existing = chatMessages.querySelectorAll(".followup-suggestions");
+  existing.forEach((el) => el.remove());
 }
 
 // ── Typing Indicator ──────────────────────────────────────────────
@@ -288,6 +350,7 @@ function showConfidence(level) {
 // ── New Chat ──────────────────────────────────────────────────────
 function startNewChat() {
   sessionId = generateSessionId();
+  askedQuestions = [];
   chatMessages.innerHTML = "";
   if (welcomeScreen) {
     chatMessages.appendChild(welcomeScreen);

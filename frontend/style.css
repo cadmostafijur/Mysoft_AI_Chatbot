@@ -463,6 +463,36 @@ html, body {
   color: #9a3412;
 }
 
+/* ── Follow-up Suggestion Chips ──────────────────────────────── */
+.followup-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  animation: messageIn 0.3s ease-out;
+}
+
+.followup-chip {
+  padding: 6px 14px;
+  background: var(--border-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-family: var(--font);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  line-height: 1.4;
+}
+
+.followup-chip:hover {
+  background: var(--primary-light);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
 /* ── Typing Indicator ─────────────────────────────────────────── */
 .typing-indicator {
   display: flex;
@@ -605,6 +635,11 @@ html, body {
   .chip {
     font-size: 12px;
     padding: 6px 12px;
+  }
+
+  .followup-chip {
+    font-size: 11px;
+    padding: 5px 10px;
   }
 }
 
