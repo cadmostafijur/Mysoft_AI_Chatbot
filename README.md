@@ -9,10 +9,34 @@ A **Retrieval-Augmented Generation (RAG)** based AI chatbot system built for **M
 
 ---
 
+## Screenshots
+
+### 1) Welcome Screen
+
+![Welcome Screen](SS/Screenshot%202026-02-12%20114457.png)
+
+### 2) Chat Example (Services)
+
+![Chat Example - Services](SS/2.png)
+
+### 3) Chat Example (Products & Platforms)
+
+![Chat Example - Products](SS/3.png)
+
+## Architecture Diagram
+
+![RAG Architecture](SS/readme-architecture.png)
+
 ## Project Structure
 
 ```
 Mysoft_AI_Chatbot/
+├── SS/
+│   ├── Screenshot 2026-02-12 114457.png # App screenshot (welcome screen)
+│   ├── 2.png                  # App screenshot (chat example)
+│   ├── 3.png                  # App screenshot (chat example)
+│   ├── readme-ui.png           # README mock screenshot (UI)
+│   └── readme-architecture.png # README diagram (architecture)
 ├── backend/
 │   ├── main.py              # FastAPI application & endpoints
 │   ├── rag.py               # RAG pipeline (retrieve → generate)
@@ -68,7 +92,11 @@ pip install openai
 
 ```bash
 # Copy the example env file
-cp .env.example .env
+# Linux/macOS:
+#   cp .env.example .env
+#
+# Windows (PowerShell):
+#   Copy-Item .env.example .env
 
 # Edit .env with your API key
 # For Gemini:
@@ -223,7 +251,11 @@ backend/faiss_indexes/
 mkdir backend/data/new_company
 
 # 2. Add documents
-cp documents/*.txt backend/data/new_company/
+# Linux/macOS:
+#   cp documents/*.txt backend/data/new_company/
+#
+# Windows (PowerShell):
+#   Copy-Item documents\\*.txt backend\\data\\new_company\\
 
 # 3. Build index via API
 curl -X POST http://localhost:8000/rebuild-index \
