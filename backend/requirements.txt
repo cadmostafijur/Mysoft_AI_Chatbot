@@ -1,0 +1,18 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-dotenv>=1.0.0
+sentence-transformers>=3.3.0
+faiss-cpu>=1.9.0
+numpy>=1.26.0
+pydantic>=2.0.0
+PyPDF2>=3.0.0
+requests>=2.32.0
+
+# Windows note:
+# If TensorFlow/Keras 3 is installed in your Python environment, Transformers may
+# require the backwards-compatible tf-keras package.
+tf-keras>=2.20.0
+
+# LLM Providers (install based on your choice)
+# pip install openai          # for OpenAI
+# pip install google-generativeai  # for Google Gemini

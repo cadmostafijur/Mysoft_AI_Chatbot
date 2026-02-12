@@ -1,0 +1,76 @@
+MYSOFT HEAVEN (BD) LTD. — PRODUCTS & PLATFORMS
+=================================================
+
+In addition to custom development, Mysoft Heaven (BD) Ltd. has built several proprietary products and SaaS platforms.
+
+1. MYSOFT ERP
+--------------
+A comprehensive Enterprise Resource Planning solution designed for small and medium-sized businesses in Bangladesh.
+- Modules: Accounting, HR & Payroll, Inventory, Sales, Purchase, Manufacturing
+- Deployment: Cloud-based (SaaS) or on-premise
+- Pricing: Starts from BDT 15,000/month for the basic plan
+- Clients: 30+ companies actively using Mysoft ERP
+- Key Features:
+  - Multi-branch and multi-currency support
+  - Bangla and English language interface
+  - VAT and tax compliance for Bangladesh
+  - Role-based access control
+  - Real-time dashboards and reporting
+  - Mobile app for on-the-go access
+
+2. MYSOFT LMS (LEARNING MANAGEMENT SYSTEM)
+--------------------------------------------
+An online education platform for schools, universities, and training institutes.
+- Features: Course management, video lectures, quizzes, assignments, certificates
+- Live class integration with Zoom and Google Meet
+- Student progress tracking and analytics
+- Parent portal for K-12 institutions
+- Pricing: BDT 8,000/month for up to 500 students
+- Clients: 15+ educational institutions across Bangladesh
+
+3. MYSOFT HMS (HOSPITAL MANAGEMENT SYSTEM)
+--------------------------------------------
+A digital health management platform for hospitals and clinics.
+- Modules: Patient registration, appointment scheduling, electronic health records (EHR), billing, pharmacy, laboratory
+- Telemedicine module for remote consultations
+- Integration with diagnostic equipment
+- HIPAA-compliant data security
+- Pricing: Custom pricing based on hospital size
+- Clients: 10+ hospitals and clinics
+
+4. MYSOFT POS (POINT OF SALE)
+-------------------------------
+A modern point-of-sale system for retail stores and restaurants.
+- Features: Barcode scanning, inventory tracking, sales analytics, customer loyalty programs
+- Works offline with automatic sync when online
+- Supports multiple payment methods (cash, card, mobile banking: bKash, Nagad)
+- Pricing: BDT 3,000/month per terminal
+- Clients: 50+ retail outlets and restaurants
+
+5. SHOPBD — E-COMMERCE PLATFORM
+---------------------------------
+A white-label e-commerce platform for Bangladeshi businesses.
+- Features: Product catalog, shopping cart, payment gateway integration (SSLCommerz, bKash), order management, delivery tracking
+- SEO optimized with built-in analytics
+- Multi-vendor marketplace support
+- Pricing: BDT 5,000/month for starter plan
+- Launched: 2022
+
+6. MYSOFT HRMS (HUMAN RESOURCE MANAGEMENT SYSTEM)
+---------------------------------------------------
+A cloud-based HR management platform.
+- Features: Employee database, attendance tracking (biometric integration), leave management, payroll processing, recruitment module
+- Compliance with Bangladesh labor law
+- Employee self-service portal
+- Pricing: BDT 50/employee/month (minimum 20 employees)
+- Clients: 25+ organizations
+
+TECHNOLOGY STACK ACROSS PRODUCTS
+---------------------------------
+- Backend: Python (Django, FastAPI), Node.js (Express), Java (Spring Boot)
+- Frontend: React.js, Next.js, Vue.js, Angular
+- Databases: PostgreSQL, MySQL, MongoDB, Redis
+- Cloud: AWS, Google Cloud Platform, DigitalOcean
+- Mobile: Flutter, React Native
+- AI/ML: TensorFlow, PyTorch, scikit-learn, Hugging Face Transformers
+- DevOps: Docker, Kubernetes, GitHub Actions, Jenkins

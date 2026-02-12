@@ -1,0 +1,111 @@
+MYSOFT HEAVEN (BD) LTD. — PROJECTS & PORTFOLIO
+==================================================
+
+Mysoft Heaven (BD) Ltd. has successfully delivered 100+ projects across various industries. Below are selected notable projects.
+
+PROJECT 1: NATIONAL BANK DIGITAL BANKING PLATFORM
+---------------------------------------------------
+Client: A leading private bank in Bangladesh
+Industry: Finance / Banking
+Duration: 12 months (2022-2023)
+Description: Developed a comprehensive digital banking platform including internet banking, mobile banking app, and internal back-office systems.
+Key Deliverables:
+- Customer-facing mobile app (Flutter) with biometric login
+- Internet banking portal (React.js) with fund transfer, bill payment, and account management
+- Back-office admin panel for transaction monitoring and fraud detection
+- Integration with Bangladesh Bank payment systems (BEFTN, NPSB, RTGS)
+- Real-time notification system
+Outcome: 50,000+ users onboarded in the first 3 months. Transaction processing time reduced by 60%.
+
+PROJECT 2: HEALTHCARE CHAIN MANAGEMENT SYSTEM
+-----------------------------------------------
+Client: A network of 5 hospitals in Dhaka
+Industry: Healthcare
+Duration: 8 months (2023)
+Description: Built a centralized hospital management system connecting multiple hospital branches with shared patient records and analytics.
+Key Deliverables:
+- Centralized EHR (Electronic Health Records) system
+- Appointment booking portal with SMS/email reminders
+- Telemedicine module supporting video consultations
+- Pharmacy inventory management
+- Analytics dashboard for hospital administrators
+Outcome: Patient wait time reduced by 40%. Cross-branch medical record access achieved seamlessly.
+
+PROJECT 3: E-COMMERCE MARKETPLACE FOR LOCAL ARTISANS
+------------------------------------------------------
+Client: Bangladesh Small and Cottage Industries Corporation (BSCIC)
+Industry: E-commerce / Government
+Duration: 6 months (2023)
+Description: Created an online marketplace platform to help local artisans and cottage industry producers sell their products nationally and internationally.
+Key Deliverables:
+- Multi-vendor marketplace with 500+ product categories
+- Payment integration with SSLCommerz, bKash, and international cards
+- Seller dashboard with inventory, orders, and revenue analytics
+- Logistics integration for shipping and delivery tracking
+- Bangla language support for rural sellers
+Outcome: 2,000+ artisans onboarded. Monthly transaction volume reached BDT 50 lakhs within 6 months.
+
+PROJECT 4: SMART CAMPUS — UNIVERSITY MANAGEMENT SYSTEM
+---------------------------------------------------------
+Client: A private university in Chittagong
+Industry: Education
+Duration: 10 months (2022-2023)
+Description: Implemented a comprehensive university management system covering admissions, academics, finance, and student life.
+Key Deliverables:
+- Online admission portal with document verification
+- Learning Management System (LMS) with online classes
+- Student and faculty portals
+- Examination management and grade processing
+- Fee payment integration with mobile banking
+- Alumni networking module
+Outcome: Paperless admission process. 95% student satisfaction rate.
+
+PROJECT 5: LOGISTICS & FLEET MANAGEMENT SYSTEM
+-------------------------------------------------
+Client: A national courier and logistics company
+Industry: Logistics / Transportation
+Duration: 7 months (2024)
+Description: Developed a real-time fleet management and parcel tracking system.
+Key Deliverables:
+- GPS-based vehicle tracking dashboard
+- Route optimization engine using machine learning
+- Parcel tracking system with real-time status updates
+- Driver mobile app for delivery management
+- Customer-facing tracking portal
+- Automated dispatch and scheduling system
+Outcome: Delivery efficiency improved by 35%. Fuel costs reduced by 20% through route optimization.
+
+PROJECT 6: AI-POWERED CUSTOMER SERVICE CHATBOT
+-------------------------------------------------
+Client: A major telecommunications company in Bangladesh
+Industry: Telecommunications
+Duration: 4 months (2024)
+Description: Built an AI-powered customer service chatbot using RAG (Retrieval-Augmented Generation) technology to handle customer inquiries.
+Key Deliverables:
+- NLP-powered chatbot integrated with company knowledge base
+- Multi-channel support (website, mobile app, Facebook Messenger)
+- Seamless handoff to human agents for complex queries
+- Analytics dashboard for chatbot performance monitoring
+- Continuous learning pipeline for improving responses
+Outcome: 70% of customer queries resolved without human intervention. Average response time under 3 seconds.
+
+CLIENT TESTIMONIALS
+--------------------
+"Mysoft Heaven transformed our banking operations. Their team's technical expertise and commitment to quality is outstanding." — CTO, Private Bank
+
+"The hospital management system has revolutionized how we manage patient care across our facilities." — Director, Hospital Network
+
+"Working with Mysoft Heaven was a pleasure. They delivered on time and the marketplace has empowered thousands of artisans." — Project Director, BSCIC
+
+INDUSTRIES WE SERVE
+---------------------
+- Banking & Financial Services
+- Healthcare & Life Sciences
+- E-commerce & Retail
+- Education & EdTech
+- Logistics & Transportation
+- Telecommunications
+- Government & Public Sector
+- Manufacturing
+- Real Estate
+- Agriculture & AgriTech
